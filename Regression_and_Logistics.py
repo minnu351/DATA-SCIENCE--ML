@@ -13,7 +13,6 @@ print(iris['target_names'])
 
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
 
-
 Lin = LogisticRegression(random_state=0)
 
 Lin.fit(x_train,y_train)
@@ -26,7 +25,6 @@ print(acc)
 #MAE measures the average magnitude of the errors in a set of predictions,without considering their direction.
 #The Mean Absolute Error(MAE) is the average of all absolute errors.
 print(mean_absolute_error(y_test,Pred_y))
-
 
 #RMSE is a quadratic scoring rule that also measures the average magnitude of the error.
 # The average squared difference between the estimated values and the actual value
